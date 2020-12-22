@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tax calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <div class="container-fluid shadow-sm rounded col-lg-4">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">Calculator</h2>
+          </div>
+        </div>
+      <form>
+        <div class="row justify-content-md-center">
+          <div class="col-lg">
+            <label for="gross">The Gross Amount</label>
+            <div class="input-group-prepend">
+              <input type="number" class="grossAmount form-control" placeholder=Calculation>
+              <span class="input-group-text" id="inputGroupPrepend2">$</span>
+            </div>
+            <small id="help" id="gross" class="form-text text-muted">Enter the gross amount</small>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-sm-auto">
+            <button class="calculate btn btn-primary" type="submit">Calculate</button>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-lg">
+            <label for="insurance">Health insurance</label>
+            <div class="input-group-prepend">
+            <input type="number" id="insurance" class="health form-control" placeholder="Health insurance" disabled>
+            <span class="input-group-text" id="inputGroupPrepend2">$</span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-lg">
+            <label for="costs">Cost of income</label>
+            <div class="input-group-prepend">
+            <input type="number" id="costs" class="costs form-control" placeholder="Obtaining Money" disabled>
+            <span class="input-group-text" id="inputGroupPrepend2">$</span>
+            </div>
+            <small id="help" class="form-text text-muted">Always 20% of the gross amount</small>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-lg">
+            <label for="charged ">Accrued tax advance</label>
+            <div class="input-group-prepend">
+            <input type="number" id="naliczona" class="naliczona form-control" placeholder="Advanced payment charge" disabled>
+            <span class="input-group-text" id="inputGroupPrepend2">$</span>
+            </div>
+            <small id="help" class="form-text text-muted">Gross amount minus tax deductible costs x 17%</small>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-lg">
+            <label for="downloaded">Tax advance taken</label>
+            <div class="input-group-prepend">
+            <input type="number" id="downloaded" class="downloaded form-control" placeholder="Advance payment taken" disabled>
+            <span class="input-group-text" id="inputGroupPrepend2">$</span>
+            </div>
+            <small id="help" class="form-text text-muted">Rounded withholding tax</small>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-lg">
+            <label class="important" for="pay">To pay</label>
+            <div class="input-group-prepend">
+            <input type="number" id="To pay" class="pay form-control" placeholder="To pay" disabled>
+            <span class="input-group-text" id="inputGroupPrepend2">$</span>
+            </div>
+            <small id="help" class="form-text text-muted">Gross amount minus the tax withheld</small>
+          </div>
+        </div>
+      </form>
+      </div>
+      <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
